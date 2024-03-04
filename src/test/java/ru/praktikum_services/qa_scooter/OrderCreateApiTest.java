@@ -22,7 +22,7 @@ import static ru.praktikum_services.qa_scooter.api.OrderApi.*;
 @AllArgsConstructor
 public class OrderCreateApiTest extends BaseTest {
     private String[] color;
-    private int track;
+    private static int track;
     private final OrderCreateRequest request = new OrderCreateRequest(
             "Тест",
             "Тестов",

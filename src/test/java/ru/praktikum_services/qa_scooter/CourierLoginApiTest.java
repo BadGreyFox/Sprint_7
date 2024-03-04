@@ -2,6 +2,7 @@ package ru.praktikum_services.qa_scooter;
 
 import io.qameta.allure.Description;
 import io.qameta.allure.junit4.DisplayName;
+import org.apache.commons.lang3.RandomStringUtils;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -17,15 +18,18 @@ import static ru.praktikum_services.qa_scooter.api.CourierApi.*;
 import static ru.praktikum_services.qa_scooter.constants.Errors.*;
 
 public class CourierLoginApiTest extends BaseTest{
-    private final CourierCreateRequest courierCreateRequest = new CourierCreateRequest(
-            "TestForApi23123123123", "12342", "Testov"
-    );
     private CourierLoginRequest loginRequest;
     private CourierLoginRequest loginRequestWithoutLogin;
     private CourierLoginRequest loginRequestWithoutPassword;
     private CourierLoginRequest loginRequestWithNonExistentLogin;
     @Before
     public void setUpWithCreateCourier(){
+        CourierCreateRequest courierCreateRequest = new CourierCreateRequest(
+                RandomStringUtils.randomAlphabetic(9),
+                RandomStringUtils.randomNumeric(9),
+                RandomStringUtils.randomAlphabetic(9)
+        );
+
         loginRequest = new CourierLoginRequest(
                 courierCreateRequest.getLogin(),
                 courierCreateRequest.getPassword());
