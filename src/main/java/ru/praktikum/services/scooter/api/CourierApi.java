@@ -2,9 +2,9 @@ package ru.praktikum.services.scooter.api;
 
 import io.qameta.allure.Step;
 import io.restassured.response.Response;
-import ru.praktikum.services.scooter.requests.courier_pojos.CourierCreateRequest;
-import ru.praktikum.services.scooter.requests.courier_pojos.CourierDeleteRequest;
-import ru.praktikum.services.scooter.requests.courier_pojos.CourierLoginRequest;
+import ru.praktikum.services.scooter.requests.courier.CourierCreateRequest;
+import ru.praktikum.services.scooter.requests.courier.CourierDeleteRequest;
+import ru.praktikum.services.scooter.requests.courier.CourierLoginRequest;
 
 import static io.restassured.RestAssured.given;
 import static ru.praktikum.services.scooter.constants.Config.COURIER_API;

@@ -3,8 +3,8 @@ package ru.praktikum.services.scooter.api;
 import io.qameta.allure.Step;
 import io.restassured.response.Response;
 import ru.praktikum.services.scooter.constants.Config;
-import ru.praktikum.services.scooter.requests.orders_pojos.OrderCancelRequest;
-import ru.praktikum.services.scooter.requests.orders_pojos.OrderCreateRequest;
+import ru.praktikum.services.scooter.requests.orders.OrderCancelRequest;
+import ru.praktikum.services.scooter.requests.orders.OrderCreateRequest;
 
 import java.util.Map;
 

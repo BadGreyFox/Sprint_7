@@ -9,10 +9,10 @@ import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
-import ru.praktikum.services.scooter.requests.orders_pojos.OrderCancelRequest;
-import ru.praktikum.services.scooter.requests.orders_pojos.OrderCreateRequest;
+import ru.praktikum.services.scooter.requests.orders.OrderCancelRequest;
+import ru.praktikum.services.scooter.requests.orders.OrderCreateRequest;
 import ru.praktikum.services.scooter.constants.ColourOfScooter;
-import ru.praktikum.services.scooter.response.orders_pojos.OrderCreateResponse;
+import ru.praktikum.services.scooter.response.orders.OrderCreateResponse;
 
 import static org.apache.http.HttpStatus.SC_CREATED;
 import static org.junit.Assert.*;

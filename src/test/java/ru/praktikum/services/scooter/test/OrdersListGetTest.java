@@ -7,7 +7,7 @@ import lombok.AllArgsConstructor;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
-import ru.praktikum.services.scooter.response.orders_pojos.OrdersGetResponse;
+import ru.praktikum.services.scooter.response.orders.OrdersGetResponse;
 
 import java.util.List;
 import java.util.Map;

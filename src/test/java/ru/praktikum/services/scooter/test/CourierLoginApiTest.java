@@ -8,10 +8,10 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import ru.praktikum.services.scooter.api.CourierApi;
-import ru.praktikum.services.scooter.requests.courier_pojos.CourierCreateRequest;
-import ru.praktikum.services.scooter.requests.courier_pojos.CourierDeleteRequest;
-import ru.praktikum.services.scooter.requests.courier_pojos.CourierLoginRequest;
-import ru.praktikum.services.scooter.response.courier_pojos.CourierLoginResponse;
+import ru.praktikum.services.scooter.requests.courier.CourierCreateRequest;
+import ru.praktikum.services.scooter.requests.courier.CourierDeleteRequest;
+import ru.praktikum.services.scooter.requests.courier.CourierLoginRequest;
+import ru.praktikum.services.scooter.response.courier.CourierLoginResponse;
 
 import static org.apache.http.HttpStatus.*;
 import static org.junit.Assert.*;

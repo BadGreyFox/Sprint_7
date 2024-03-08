@@ -1,4 +1,4 @@
-package ru.praktikum.services.scooter.requests.orders_pojos;
+package ru.praktikum.services.scooter.requests.orders;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

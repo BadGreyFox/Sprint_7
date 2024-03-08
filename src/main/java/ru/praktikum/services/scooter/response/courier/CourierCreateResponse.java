@@ -1,4 +1,4 @@
-package ru.praktikum.services.scooter.response.courier_pojos;
+package ru.praktikum.services.scooter.response.courier;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
