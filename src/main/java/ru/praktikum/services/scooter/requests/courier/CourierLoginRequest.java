@@ -10,8 +10,4 @@ import lombok.NoArgsConstructor;
 public class CourierLoginRequest {
     private String login;
     private String password;
-    public CourierLoginRequest(CourierLoginRequest courierLoginRequest){
-        this.login = courierLoginRequest.getLogin();
-        this.password = courierLoginRequest.getLogin();
-    }
 }
