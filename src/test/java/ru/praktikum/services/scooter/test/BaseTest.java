@@ -8,7 +8,7 @@ import ru.praktikum.services.scooter.constants.Config;
 public abstract class BaseTest {
     @Before
     public void setUp() {
-        RestAssured.baseURI= Config.BASE_URI;
+        RestAssured.baseURI = Config.BASE_URI;
     }
 
 }
