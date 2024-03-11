@@ -10,5 +10,4 @@ public abstract class BaseTest {
     public void setUp() {
         RestAssured.baseURI = Config.BASE_URI;
     }
-
 }
