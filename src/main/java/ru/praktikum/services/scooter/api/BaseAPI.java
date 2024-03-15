@@ -22,4 +22,17 @@ public class BaseAPI {
                 .when()
                 .get(api);
     }
+    public static void deleteRequest(String deleteReq){
+        given()
+                .when()
+                .delete(deleteReq);
+    }
+    public static void putRequest (Map<String, Object> map, String api) {
+        given()
+                .contentType(ContentType.JSON)
+                .and()
+                .queryParams(map)
+                .when()
+                .put(api);
+    }
 }
