@@ -6,7 +6,7 @@ import ru.praktikum.services.scooter.requests.courier.CourierCreateRequest;
 import ru.praktikum.services.scooter.requests.courier.CourierDeleteRequest;
 import ru.praktikum.services.scooter.requests.courier.CourierLoginRequest;
 
-import static io.restassured.RestAssured.given;
+import static ru.praktikum.services.scooter.api.BaseAPI.deleteRequest;
 import static ru.praktikum.services.scooter.api.BaseAPI.postRequest;
 import static ru.praktikum.services.scooter.constants.Config.COURIER_API;
 import static ru.praktikum.services.scooter.constants.Config.COURIER_LOGIN;
@@ -22,8 +22,6 @@ public class CourierApi {
     }
     @Step("Отправка DELETE-запроса на ручку удаления курьера")
     public static void courierDeleteRequest(CourierDeleteRequest request){
-            given()
-                .when()
-                .delete(COURIER_API + request.getId());
+        deleteRequest(COURIER_API + request.getId());
     }
 }

@@ -7,9 +7,9 @@ import ru.praktikum.services.scooter.requests.orders.OrderCreateRequest;
 
 import java.util.Map;
 
-import static io.restassured.RestAssured.given;
 import static ru.praktikum.services.scooter.api.BaseAPI.*;
-import static ru.praktikum.services.scooter.constants.Config.*;
+import static ru.praktikum.services.scooter.constants.Config.ORDER_CANCEL;
+import static ru.praktikum.services.scooter.constants.Config.ORDER_CREATE_OR_GET;
 
 public class OrderApi {
     @Step("Отправка POST-запроса на ручку создания заказа")
@@ -22,11 +22,9 @@ public class OrderApi {
     }
     @Step("Отправка PUT-запроса на ручку отмены заказа")
     public static void orderCancelRequest (OrderCancelRequest json) {
-        given()
-                .header("Content-type", "application/json")
-                .and()
-                .queryParam("track", json.getTrack())
-                .when()
-                .put(ORDER_CANCEL);
+        putRequest(
+                Map.of("track", json.getTrack()),
+                ORDER_CANCEL
+        );
     }
 }
